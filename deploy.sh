@@ -14,6 +14,8 @@ cd docs/.vuepress/dist
 if [ -z "$TTK_GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:DonesBetter/tatakai.git
+  git config  user.name "wsw"
+  git config  user.email "414723943@qq.com"
 else
   msg='来自github actions的自动部署'
   githubUrl=https://DonesBetter:${TTK_GITHUB_TOKEN}@github.com/DonesBetter/tatakai.git
