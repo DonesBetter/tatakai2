@@ -36,3 +36,7 @@ jobs:
         with:
           branch: gh-pages  # 部署到的分支
           folder: docs/.vuepress/dist # 要部署的文件夹.
+        env: 
+          BASE_BRANCH: master # 要部署的文件夹所在的分支.
+          BUILD_SCRIPT: npm install && npm run build && cd docs/.vuepress/dist  && cd - # 部署前要执行的命令（记得cd进入某个目录后，后面要cd -退回开始的目录）
+
