@@ -37,10 +37,8 @@ jobs:
           npm install
           npm run build
           cd docs/.vuepress/dist
-          cd -
 
-      - name: Deploy🚀 # 步骤3 （只提交到github可以使用这个步骤）
-        uses: JamesIves/github-pages-deploy-action@4.1.5 # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
+      - name: Deploy🚀 # 步骤3 github。 https://github.com/JamesIves/github-pages-deploy-action
         with:
           branch: gh-pages  # 部署到的分支
           folder: docs/.vuepress/dist # 要部署的文件夹.
