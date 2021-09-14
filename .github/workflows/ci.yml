@@ -39,6 +39,7 @@ jobs:
           cd docs/.vuepress/dist
 
       - name: Deploy🚀 # 步骤3 github。 https://github.com/JamesIves/github-pages-deploy-action
+        uses: JamesIves/github-pages-deploy-action@4.1.5 # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
         with:
           branch: gh-pages  # 部署到的分支
           folder: docs/.vuepress/dist # 要部署的文件夹.
