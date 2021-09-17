@@ -35,11 +35,10 @@ jobs:
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           npm install
-          npm run build
-          cd docs/.vuepress/dist
+          npm run deploy
 
-      - name: Deploy🚀 # 步骤3 github。 https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@4.1.5 # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
-        with:
-          branch: gh-pages  # 部署到的分支
-          folder: docs/.vuepress/dist # 要部署的文件夹.
+#      - name: Deploy🚀 # 步骤3 github。 https://github.com/JamesIves/github-pages-deploy-action
+#        uses: JamesIves/github-pages-deploy-action@4.1.5 # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
+#        with:
+#          branch: gh-pages  # 部署到的分支
+#          folder: docs/.vuepress/dist # 要部署的文件夹.
