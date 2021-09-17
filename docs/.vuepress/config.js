@@ -7,7 +7,7 @@ module.exports = {
   theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   title: "blog",
-  base: "/docs/.vuepress/dist/",
+  base: "/dist/",
   description: 'web前端技术博客, 菜鸟试水',
   // base: '/', // 格式：'/<仓库名>/'， 默认'/'
   markdown: {
